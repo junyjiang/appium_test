@@ -1,0 +1,30 @@
+testinfo:
+    - id: test020
+      title: 测试
+      info: 测试
+testcase:
+    - element_info: android.widget.ImageView
+      find_type: class_name
+      is_time: 5
+      operate_type: click
+      info: ceshi
+    - is_time: 5
+      operate_type: swipe_left
+      info: ceshi
+    - is_time: 5
+      operate_type: swipe_left
+      info: ceshi
+    - element_info: com.tritonsfs.chaoaicai:id/rb_mainPage
+      find_type: id
+      is_time: 5
+      operate_type: click
+      info: 测试
+    - element_info: com.tritonsfs.chaoaicai:id/img_right
+      find_type: id
+      operate_type: click
+      info: 测试
+check:
+    - element_info: com.tritonsfs.chaoaicai:id/tv_login_top
+      find_type: id
+      operate_type: get_value
+      info: 测试
