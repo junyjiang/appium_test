@@ -61,6 +61,7 @@ class StartAppiumServer:
                 os.popen('kill -9 {0}'.format(plists[0]))
                 print('stop OS X appium server now')
             else:
+                print(plist)
                 pass
 
     def win_runner(self, url):

@@ -4,7 +4,7 @@ import random
 
 from Base.BaseAdb import execadb
 from Base import BSTestRunner
-from Base.BaseRunner import appium_testcase, ParametrizedTestCase
+from Base.BaseRunner import ParametrizedTestCase
 from Base.StartAppiumServer import StartAppiumServer
 from TestCases.Index_Case import Index_Test
 

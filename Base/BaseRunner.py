@@ -7,8 +7,8 @@ def appium_testcase(devicess):
     caps = {}
     caps["platformName"] = "android"
     caps["deviceName"] = devicess['deviceid']
-    caps["appPackage"] = "com.tritonsfs.chaoaicai"
-    caps["appActivity"] = ".main.guider.SplashActivity"
+    caps["appPackage"] = "com.xxx.xxx"
+    caps["appActivity"] = ".xxx.xxx.xxxx"
     driver = webdriver.Remote("http://127.0.0.1:"+str(devicess['port'])+"/wd/hub", caps)
     return driver
 class ParametrizedTestCase(unittest.TestCase):

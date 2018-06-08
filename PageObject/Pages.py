@@ -23,6 +23,7 @@ class PageObjects:
         self.msg = ""
 
     def operate(self):
+        print(self.testCase)
         for item in self.testCase:
             m_s_g = self.msg + "\n" if self.msg != "" else ""
             result = self.operateElement.operate(item, self.testInfo)
@@ -30,7 +31,6 @@ class PageObjects:
                 msg = "执行过程中失败，请检查元素是否存在" + item["element_info"] + "," + result.get("text", " ")
                 if not result.get("webview", True):
                     msg = "切换到webview失败，请确定是否在webview页面"
-                print(msg)
                 self.msg = m_s_g + msg
                 self.testInfo[0]["msg"] = msg
                 self.isOperate = False
@@ -38,11 +38,9 @@ class PageObjects:
             if item.get("is_time", "0") != "0":
                 time.sleep(item["is_time"])  # 等待时间
                 print("--等待下---")
-
             if item.get("operate_type", "0") == be.GET_VALUE or item.get("operate_type", "0") == be.GET_CONTENT_DESC:
                 self.get_value.append(result["text"])
                 self.is_get = True  # 对比数据
-
         return True
 
     def checkPoint(self, kwargs={}):

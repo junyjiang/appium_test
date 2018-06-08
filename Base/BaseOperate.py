@@ -149,7 +149,7 @@ class OperateElement():
         :param mOperate:
         :return:
         """
-        self.elements_by(mOperate).send_keys(mOperate["msg"])
+        self.element_by(mOperate).send_keys(mOperate["msg"])
         return {"result": True}
 
     def get_value(self, mOperate):

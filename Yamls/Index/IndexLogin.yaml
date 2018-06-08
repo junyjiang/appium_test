@@ -5,26 +5,40 @@ testinfo:
 testcase:
     - element_info: android.widget.ImageView
       find_type: class_name
-      is_time: 5
       operate_type: click
-      info: ceshi
-    - is_time: 5
-      operate_type: swipe_left
-      info: ceshi
-    - is_time: 5
-      operate_type: swipe_left
-      info: ceshi
-    - element_info: com.tritonsfs.chaoaicai:id/rb_mainPage
-      find_type: id
       is_time: 5
-      operate_type: click
-      info: 测试
-    - element_info: com.tritonsfs.chaoaicai:id/img_right
+      info: ceshi
+    - operate_type: swipe_left
+      info: ceshi
+    - operate_type: swipe_left
+      info: ceshi
+      is_time: 2
+    - element_info: com.x.x:id/guide_end_imageView1
       find_type: id
       operate_type: click
+      is_time: 1
+      info: ceshi
+    - element_info: com.xx.x:id/img_close
+      find_type: id
+      operate_type: click
+      info: ceshi
+    - element_info: com.x.x:id/rb_mainPage
+      find_type: id
+      operate_type: click
+      is_time: 1
       info: 测试
+    - element_info: com.x.x:id/img_right
+      find_type: id
+      operate_type: click
+      info: 测试
+    - element_info: com.xx.xx:id/input_login_phone
+      find_type: id
+      operate_type: set_value
+      msg: 15618358821
+      info: 测试
+
 check:
-    - element_info: com.tritonsfs.chaoaicai:id/tv_login_top
+    - element_info: com.xx.xx:id/tv_login_top
       find_type: id
       operate_type: get_value
       info: 测试

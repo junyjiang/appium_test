@@ -2,7 +2,6 @@ import time
 from Base.BaseOperate import OperateElement
 from appium import webdriver
 from appium.webdriver.common.touch_action import TouchAction
-
 from Base.StartAppiumServer import *
 from Base.BaseRunner import ParametrizedTestCase
 
